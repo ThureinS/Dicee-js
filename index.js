@@ -9,7 +9,9 @@ document
   .setAttribute("src", `./images/dice${Player2}.png`);
 
 if (Player1 > Player2) {
-  document.querySelector("h1").textContent = "Player 1 Wins";
+  document.querySelector("h1").textContent = "Player 1 Wins!";
+} else if (Player2 > Player1) {
+  document.querySelector("h1").textContent = "Player 2 Wins!";
 } else {
-  document.querySelector("h1").textContent = "Player 2 Wins";
+  document.querySelector("h1").textContent = "Draw!";
 }
